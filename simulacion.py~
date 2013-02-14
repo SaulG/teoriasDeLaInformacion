@@ -61,7 +61,7 @@ def simulador(freq_zero, probabilidad_de_exito_zero, probabilidad_de_exito_uno):
        #print "TIEMPO TOTAL: ", ( t2 - t1 ) * 1000.0
    #print s, x2, n
    #print "Desviacion estandar: ", desviacion_estandar( s, x2, n )
-   print freq_zero, probabilidad_de_exito_zero, probabilidad_de_exito_uno, b**y, s,desviacion_estandar( s, x2, n )
+       print freq_zero, probabilidad_de_exito_zero, probabilidad_de_exito_uno, b**y, s,desviacion_estandar( s, x2, n )
 
 def main():
     n = 10
