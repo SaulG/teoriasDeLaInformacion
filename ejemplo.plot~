@@ -1,5 +1,5 @@
-set term postscript pdf color 24
-set output "ejemplo.pdf"
+set term postscript eps color 24
+set output "ejemplo.eps"
 set size 2, 5
 unset key
 set title "Simulacion de canal"

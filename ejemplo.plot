@@ -1,3 +1,4 @@
+
 set term postscript eps color 24
 set output "ejemplo.eps"
 set size 2, 5

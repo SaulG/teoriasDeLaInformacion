@@ -1,0 +1,19 @@
+class Node:
+    def __init__(self, letra):
+        self.letra = letra
+        self.frecuencia = 1
+        return
+
+    def printItAll(self):
+        print self.letra
+        print self.frecuencia
+        return
+
+def main():
+    nodo = Node("a")
+    nodo.printItAll()
+    nodo.frecuencia *=10
+    print nodo.frecuencia
+    del nodo.frecuencia
+    print nodo.frecuencia
+main()
