@@ -1,3 +1,5 @@
+from sys import argv
+
 class Node:
     def __init__(self, symbol, nodeLeft, nodeRight, frequency):
         self.label = ''
@@ -43,11 +45,14 @@ class Node:
             dictionary[self.symbol] = self.label
         return
 
-
 def main():
-    string = raw_input(">")
+    print argv[1]
+    archivo =  open(argv[1], 'r')
+    datos = ''
+    for line in archivo:
+        datos = '%s%s'%(datos, line)
     dictionary = dict()
-    for s in string:
+    for s in datos:
         if s in dictionary.keys():
             dictionary[s] += 1
         else:
@@ -62,13 +67,14 @@ def main():
         min1 = node_list.pop(0)
         min2 = node_list.pop(0)
         node_list.append(Node(None, min1, min2, min1.frequency + min2.frequency)) 
+
     root = node_list.pop(0)
     root.name('')
     code = dict()
     root.insert(code)
 
     binary = ''
-    for s in string:
+    for s in datos:
         binary = '%s%s' % (binary, code[s])
     copy = binary
             
